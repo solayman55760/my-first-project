@@ -1,0 +1,194 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+section header{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+
+}
+
+
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+section header ul li{
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+
+section header ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+section header ul li button{
+    background-color:#4584ef ;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+section .main{
+    width: 580px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+section .main .searchbox{
+    position: relative;
+    width: 100%;
+    margin-top: -30px;
+
+}
+
+
+section .main .searchbox .search{
+   width: 100%;
+   padding: 13px; 
+   padding-left:10px;
+   padding-right: 90px;
+   border-radius: 30px;
+   border: 1px solid #0e0d0d;
+   outline: none;
+   font-size: 16px;
+}
+
+
+section .main .searchbox .icons{
+    position: absolute; 
+    top: 0px;
+    width: 100%;
+    display: flex;
+    padding: 12px 20PX;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events:none;
+    margin-left: auto;
+ 
+ }
+
+
+section .main .buttons{
+    margin-top: 20px;   
+}
+
+
+section .main .buttons button{
+    margin: 0 5px;
+    padding:12px 20px ;
+    color: #555;
+    font-size: 14px;
+    border: none;
+    border-radius: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+
+section .main .buttons button:hover{
+    border-radius:1px solid rgb(17, 245, 131) ;
+}
+
+
+section .main .lang{
+    margin-top: 20px;
+}
+
+
+section .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(245, 250, 250);
+}
+
+
+section .footer .row{
+    display: flex;
+    justify-content:space-between ;
+    border-top: 1px solid rgba(0,0,0,0.5 );
+}
+
+
+section .footer .row ul{
+    display: flex;
+}
+
+
+section .footer .row ul li{
+    list-style: none;
+}
+
+
+section .footer .row ul li a{
+   text-decoration: none;
+   font-size:14px ;
+   color: rgb(228, 38, 38);
+   margin-right: 25px;
+}
+
+
+
+/*Desktop*/
+@media(min-width:1024px){
+
+}
+/*tablet view*/
+@media(min-width:769px) and (max-width:1023px){
+    
+}
+
+
+/*Mobile view*/
+@media (max-width:900px){
+    section .main .searchbox .search{
+        width: 78%;
+
+    }
+    section .main .searchbox{
+        width: 85%;
+    }
+    section .footer .row ul{
+        display: block;
+    }
+}
